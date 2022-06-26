@@ -18,4 +18,14 @@
 
 ## iOS screens
 
-![alt Logo](https://github.com/AhmedHF/Homey/blob/main/app/assets/images/image.jpg)
+### Arabic
+
+<p align="center">
+    <img src="https://github.com/AhmedHF/Homey/blob/main/screenShots/ios_ar.jpg" alt="Image" width="260"/>
+    </p>
+
+### English
+
+<p align="center">
+    <img src="https://github.com/AhmedHF/Homey/blob/main/screenShots/ios_en.png" alt="Image" width="260"/>
+</p>

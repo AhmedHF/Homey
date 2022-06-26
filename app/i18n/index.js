@@ -3,6 +3,9 @@ import {I18nManager} from 'react-native';
 import {initReactI18next} from 'react-i18next';
 import languages from './locales';
 
+I18nManager.forceRTL(true);
+I18nManager.allowRTL(true);
+
 export default i18n.use(initReactI18next).init({
   resources: languages,
   lng: I18nManager.isRTL ? 'ar' : 'en',
