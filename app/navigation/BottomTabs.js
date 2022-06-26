@@ -7,7 +7,7 @@ import Octicons from 'react-native-vector-icons/Octicons';
 import HomeScreen from '../screens/Home/Home';
 import MyOrdersScreen from '../screens/MyOrders/MyOrders';
 import SettingsScreen from '../screens/Settings/Settings';
-import {StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View} from 'react-native';
 import {useTranslation} from 'react-i18next';
 import MyTabBar from './MyTabBar';
 
@@ -22,10 +22,15 @@ const BottomTabs = () => {
       initialRouteName={'HomeStackNavigator'}
       screenOptions={({route}) => ({
         tabBarStyle: {
-          // borderTopEndRadius: 25,
-          // borderTopStartRadius: 25,
+          borderTopEndRadius: 25,
+          borderTopStartRadius: 25,
+          borderTopWidth: 0,
+          elevation: 5,
+          shadowColor: '#cccccc',
+          shadowOffset: {width: 0, height: 0},
+          shadowOpacity: 0.5,
           backgroundColor: colors.white,
-          height: 60,
+          height: Platform.OS === 'android' ? 60 : 100,
         },
 
         tabBarIcon: ({focused, color, size}) => {

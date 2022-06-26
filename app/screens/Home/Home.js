@@ -6,6 +6,7 @@ import {
   ScrollView,
   TextInput,
   I18nManager,
+  Platform,
 } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
@@ -91,6 +92,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginVertical: 27,
     elevation: 5,
+    shadowColor: '#cccccc',
+    shadowOffset: {width: 0, height: 0},
+    shadowOpacity: 1,
     backgroundColor: colors.white,
     alignItems: 'center',
     borderRadius: 10,
@@ -104,6 +108,8 @@ const styles = StyleSheet.create({
     borderColor: colors.black,
     direction: 'rtl',
     color: colors.black,
+    paddingHorizontal: 5,
+    paddingTop: Platform.OS === 'ios' ? 5 : 0,
     fontFamily: 'Tajawal-Medium',
   },
   loc: {

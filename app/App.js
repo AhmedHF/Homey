@@ -1,7 +1,8 @@
 import React from 'react';
-import {LogBox} from 'react-native';
+import {LogBox, StatusBar} from 'react-native';
 
 import Navigator from './navigation/Navigator';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 // Disabled console warnings
 LogBox.ignoreAllLogs(true);
@@ -12,7 +13,12 @@ class App extends React.Component {
   }
 
   render() {
-    return <Navigator />;
+    return (
+      <SafeAreaProvider style={{flex: 1, backgroundColor: 'white'}}>
+        <StatusBar barStyle="light-content" />
+        <Navigator />
+      </SafeAreaProvider>
+    );
   }
 }
 

@@ -22,7 +22,7 @@ const ServiceItem = props => {
   }, [icon]);
 
   return (
-    <View style={styles.container}>
+    <View key={title + icon} style={styles.container}>
       <AppText style={{fontSize: 17}}>{title}</AppText>
       <View style={styles.icon}>
         <Icon width={30} height={30} />

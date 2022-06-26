@@ -33,7 +33,7 @@ const AppSwiper = props => {
       }>
       {data.map((item, index) => {
         return (
-          <View style={styles.slide1}>
+          <View key={index} style={styles.slide1}>
             <ImageBackground source={image} style={styles.image}>
               <Text style={styles.text}>
                 Home
