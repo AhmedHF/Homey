@@ -21,7 +21,7 @@
 ### Arabic
 
 <p align="center">
-    <img src="https://github.com/AhmedHF/Homey/blob/main/screenShots/ios_ar.jpg" alt="Image" width="260"/>
+    <img src="https://github.com/AhmedHF/Homey/blob/main/screenShots/ios_ar.png" alt="Image" width="260"/>
     </p>
 
 ### English
