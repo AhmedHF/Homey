@@ -1,6 +1,12 @@
 import React, {useState} from 'react';
 import {useTranslation} from 'react-i18next';
-import {View, StyleSheet, ScrollView, TextInput} from 'react-native';
+import {
+  View,
+  StyleSheet,
+  ScrollView,
+  TextInput,
+  I18nManager,
+} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
@@ -25,7 +31,7 @@ const Home = () => {
           style={styles.input}
           placeholder={t('searchLocation')}
           placeholderTextColor={colors.black}
-          textAlign={'right'}
+          textAlign={I18nManager.isRTL ? 'right' : 'left'}
         />
         <MaterialIcons name={'my-location'} size={20} color={colors.black} />
       </View>
